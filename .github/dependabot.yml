@@ -1,7 +1,8 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/"
+    directories:
+      - "**/*"
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
@@ -9,7 +10,8 @@ updates:
       - dependency-type: "direct"
       - dependency-type: "indirect"
   - package-ecosystem: "npm"
-    directory: "/"
+    directories:
+      - "**/*"
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
